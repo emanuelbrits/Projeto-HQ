@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+html { 
+    background: url("../../img/background_comic.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.corpoQuadrinhos {
+    min-height: 100vh;
+    width: 70vw;
+    background-color: rgb(9, 11, 43);
+}
+
+.tituloQuadrinho {
+    padding-top: 5vh;
+    color: yellow;
+}
+
+.dadosQuadrinho {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 10vh;
+
+    & .capaDados {
+        height: 25rem;
+        margin: 0;
+        img {
+            height: 100%;
+        }
+        border: 1px solid yellow;
+    }
+
+    & .ano_andamentoDados{
+        flex-direction: column;
+        align-items: center;
+        width: 70%;
+
+        & .anoDados{
+            display: flex;
+            border: 1px solid yellow;
+            height: 49.4%;
+            align-items: center;
+            justify-content: center;
+            color: green;
+        }
+
+        & .andamentoDados{
+            display: flex;
+            border: 1px solid yellow;
+            height: 49.5%;
+            align-items: center;
+            justify-content: center;
+            color: green;
+        }
+    }
+}
+
+.tituloVolumes {
+    padding-top: 5vh;
+    color: yellow;
+    font-size: x-small;
+}
+
+.ListaVolumes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+.cardVolume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19%;
+    height: 20rem;
+    margin-top: 4vh;
+
+    & .img-capa {
+        height: 12.5rem;
+        width: 9rem;
+    }
+
+    & .numeroVolume {
+        color: yellow;
+    }
+}
+
+.ListaVolumes :hover {
+    border: 0.1rem solid yellow;
+}
+
+.cardVolume :hover {
+    border: none;
+}
