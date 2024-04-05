@@ -9,7 +9,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
-          <Route path='quadrinhos'>
+        <Route path='/'>
             <Route index element={<QuadrinhosPage/>}/>
             <Route path=':id' element={<QuadrinhoPage/>}/>
           </Route>

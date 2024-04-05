@@ -18,7 +18,7 @@ export function QuadrinhosLista() {
         <>
             <div className="ListaQuadrinhos">
                 {Quadrinho.map((quadrinho) => (
-                    <Link to={`/quadrinhos/${quadrinho.id}`} key={quadrinho.titulo} className="cardQuadrinho">
+                    <Link to={`/${quadrinho.id}`} key={quadrinho.titulo} className="cardQuadrinho">
                         <img className="img-capa" src={quadrinho.link_capa} alt="capa" />
                         <div className="tituloQuadrinho">{quadrinho.titulo}</div>
                     </Link>
