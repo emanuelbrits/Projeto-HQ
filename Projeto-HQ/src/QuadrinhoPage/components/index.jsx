@@ -18,7 +18,7 @@ export function VolumesLista({id}) {
         <>
             <div className="ListaVolumes">
                 {Volume.map((volume) => (
-                    <Link to={`${volume.link}`} key={volume.titulo} className="cardVolume">
+                    <Link to={`${volume.link}`} target="_blank" rel="noopener noreferrer" key={volume.titulo} className="cardVolume">
                         <img className="img-capa" src={volume.link_capa} alt="capa" />
                         <div className="numeroVolume">{volume.numero}</div>
                     </Link>
