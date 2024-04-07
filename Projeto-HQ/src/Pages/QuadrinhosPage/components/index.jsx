@@ -11,14 +11,14 @@ export function QuadrinhosLista() {
     }, []);
 
     async function getquadrinho() {
-        const { data } = await supabase.from("quadrinho").select();
+        const { data } = await supabase.from("quadrinho").select().order('ano', {ascending: false});
         setquadrinho(data);
     }
     return (
         <>
             <div className="ListaQuadrinhos">
                 {Quadrinho.map((quadrinho) => (
-                    <Link to={`/${quadrinho.id}`} key={quadrinho.titulo} className="cardQuadrinho">
+                    <Link to={`/quadrinhos/${quadrinho.id}`} key={quadrinho.titulo} className="cardQuadrinho">
                         <img className="img-capa" src={quadrinho.link_capa} alt="capa" />
                         <div className="tituloQuadrinho">{quadrinho.titulo}</div>
                     </Link>

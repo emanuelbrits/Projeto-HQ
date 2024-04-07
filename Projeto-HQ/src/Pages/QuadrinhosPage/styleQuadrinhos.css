@@ -27,8 +27,22 @@ html {
     color: yellow;
 }
 
+.AreaButtonAddQuadrinho {
+    padding-top: 8vh;
+
+    & .ButtonAddQuadrinho{
+        background-color: #05b90e;
+        border: none;
+    }
+}
+
+.ButtonAddQuadrinho :hover {
+    background-color: blue;
+    border: 2px solid blue;
+}
+
 .ListaQuadrinhos {
-    padding-top: 10vh;
+    padding-top: 3vh;
     padding-bottom: 10vh;
     display: flex;
     flex-direction: row;

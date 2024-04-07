@@ -22,6 +22,19 @@ html {
     background-color: rgb(9, 11, 43);
 }
 
+.AreaButtonVoltar {
+    padding-top: 8vh;
+    display: flex;
+    justify-content: start;
+    margin-left: 4vw;
+
+    & .ButtonVoltar{
+        background-color: #05b90e;
+        border: none;
+        width: 10vw;
+    }
+}
+
 .tituloQuadrinho {
     padding-top: 5vh;
     color: yellow;

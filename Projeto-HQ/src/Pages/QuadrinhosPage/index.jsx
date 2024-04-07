@@ -1,5 +1,6 @@
 import "./styleQuadrinhos.css"
 import { QuadrinhosLista } from "./components/index"
+import { Link } from "react-router-dom";
 
 function QuadrinhosPage() {
     return (
@@ -9,6 +10,11 @@ function QuadrinhosPage() {
                     <h1>
                         Lista de quadrinhos:
                     </h1>
+                </div>
+                <div className="AreaButtonAddQuadrinho">
+                    <Link to={'/addquadrinho'}>
+                        <button className="ButtonAddQuadrinho">Adicionar quadrinho</button>
+                    </Link>
                 </div>
                 <div className="listaQuadrinhos">
                     <QuadrinhosLista />
