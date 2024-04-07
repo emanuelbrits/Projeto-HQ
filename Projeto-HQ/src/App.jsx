@@ -10,6 +10,7 @@ function App() {
     <div>
       <BrowserRouter>
         <Routes>
+            <Route path='/' element={<QuadrinhosPage/>}/>
         <Route path='/quadrinhos'>
             <Route index element={<QuadrinhosPage/>}/>
             <Route path=':id' element={<QuadrinhoPage/>}/>
