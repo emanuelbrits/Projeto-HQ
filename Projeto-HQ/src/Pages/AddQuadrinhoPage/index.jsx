@@ -20,7 +20,7 @@ function AddQuadrinhoPage() {
   };
 
   const handleAdd = async () => {
-    const { data } = await supabase
+    const { data, error } = await supabase
       .from('quadrinho')
       .insert([
         {
@@ -31,10 +31,6 @@ function AddQuadrinhoPage() {
         },
       ])
       .select()
-
-      console.log(data);
-
-      navigate("/quadrinhos")
   };
 
   return (
