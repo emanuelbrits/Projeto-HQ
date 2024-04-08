@@ -12,13 +12,11 @@ export function QuadrinhosLista() {
     }, []);
 
     async function getquadrinho() {
-        const { data, error } = await supabase.from("quadrinho").select().order('ano', { ascending: false });
+        const { data, error } = await supabase.from("quadrinho").select().order('data_inclusao', { ascending: false });
         setquadrinho(data);
     }
 
     const removeQuadrinho = async (idQuadrinho) => {
-
-        alert('Voce tem certeza que deseja remover esse quadrinho ?')
 
         const { error } = await supabase
             .from('quadrinho')

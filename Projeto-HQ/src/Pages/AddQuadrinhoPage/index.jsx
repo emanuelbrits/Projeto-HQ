@@ -31,6 +31,8 @@ function AddQuadrinhoPage() {
         },
       ])
       .select()
+
+      alert('Por favor, volte para a tela principal')
   };
 
   return (
